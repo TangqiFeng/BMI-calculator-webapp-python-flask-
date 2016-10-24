@@ -19,6 +19,7 @@ The team members are:
 - Tangqi Feng
 - Weichen Wang
 - Qi Fu
+
 All team members contributed to all aspects of the project.
 As we all learn less related techniques, this project is completed while we learn.
 
