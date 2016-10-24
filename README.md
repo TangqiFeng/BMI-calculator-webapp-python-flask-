@@ -20,9 +20,10 @@ The team members are:
 - Weichen Wang
 - Qi Fu
 All team members contributed to all aspects of the project.
+As we all learn less related techniques, this project is completed while we learn.
 
 ### Meetings
-Team meetings were held every Tuesday at 11am in the canteen at GMIT's Dublin Road campus for the duration of the project.
+Team meetings were held every Tuesday at 2pm in the library at GMIT's Dublin Road campus for the duration of the project.
 At these meetings, the management of the project was discussed, among other topics.
 The project was divided into separate tasks, and each task was assigned to team members - usually on an individual basis.
 At each meeting, Tangqi Feng took notes using their laptop and assigned the tasks using GitHub Issues.
