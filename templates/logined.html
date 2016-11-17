@@ -22,6 +22,7 @@
 
     <!--auther: Tangqi Feng-->
     <script type="text/javascript" src="{{mainJs}}"></script>
+    <script type="text/javascript" src="{{convertJs}}"></script>
 
 
     <style>
@@ -132,9 +133,13 @@ weight in relation to your height, and applies to most adult
                 <img width="150" height="55" src="{{login}}" />
 
                 <h3 class="text1">hello : {{get_flashed_messages()[0]}} </h3>
-                <a href="/" style="margin: 6px 0 6px 10px; color: #FF8040;">logout</a>
-                
-                
+                <a class="text3" style="margin-top:10px;" href="/" style="margin: 6px 0 6px 10px; color: #FF8040;">logout</a>
+
+                <p style="margin-top:10px;">click
+                    <a class="text2" href="/history">here</a> for more infomation!</p>
+
+
+
 
             </div>
         </div>
@@ -177,16 +182,40 @@ weight in relation to your height, and applies to most adult
                 </table>
             </div>
 
-            <!-- inches to cm convert caculator -->
-            <div class="col-md-4 column" id="calculator" style="border: 1px dashed rgb(0,0,255)">
-                <p>calculator</p>
+            <!-- inches to cm convert caculator   author:Qi Fu-->
+            <div class="col-md-4 column" id="calculator" style="border: 1px dashed rgb(0,0,255); margin-top:5%;">
+                <table>
+                    <tr>
+                        <b>Hight :&nbsp;</b>
+                        <input type="text" size="1" maxlength="3" id="height_feet" style="margin-left:0px;margin-top:30px;">feet
+                        <input type="text" size="1" maxlength="3" id="height_inches" style="margin-left:0px;">inches
+                        <b>=</b>
+                        <input type="text" size="3" maxlength="4" id="centimeter" style="margin-left:0px;">cm
+                    </tr>
+                    <br>
+                    <button type="button" style="margin-left:0px;width:60px;height:20px; " onclick="one()">Convert</button>
+                    <button type="button" style="margin-left:50px;margin-top:20px;width:60px;height:20px;" onclick="clear1()">Reset</button>
+
+                </table>
+                <table>
+                    <tr>
+                        <b>Weight:&nbsp;</b>
+                        <input type="text" size="5" maxlength="5" id="pound" style="margin-left:0px;margin-top:30px">lb
+                        <b style="margin-left:10px;">=</b>
+                        <input type="text" size="3" maxlength="5" id="kilogram" style="margin-left:15px;">kg
+                    </tr>
+                    <br>
+                    <button type="button" style="margin-top:30px;width:60px;height:20px; " onclick="two()">Convert</button>
+                    <button type="button" style="margin-left:50px;width:60px;height:20px; " onclick="clear2()">Reset</button>
+
+                </table>
             </div>
         </div>
 
         <!--result display          author: Tangqi Feng -->
         <div class="row clearfix" id="result" style="border: 1px dashed rgb(0,0,255)">
             <table class="col-md-12 column" height="200px" borderColorDark=#f5fafa borderColorLight=#8AB78A>
-                <form name="form2" action="/history" method="post">
+                <form name="form2">
                     <tr>
                         <td align=center bgColor=#f9fbf9 colspan="2" style="font-size:18px; color:green; ">result
                             <hr/>
@@ -210,11 +239,7 @@ weight in relation to your height, and applies to most adult
                             <textarea onfocus=blur() name=nowstat cols=40 style="border:0; background:none;"></textarea>
                         </td>
                     </tr>
-                    <tr>
-                        <td>
-                            <p>click <button onclick="submit">here</button>  to show history!</p>
-                        </td>
-                    </tr>
+
                 </form>
             </table>
         </div>
