@@ -19,6 +19,7 @@ def hello_world():
 
 def login():
     mainJs=url_for("static",filename="js/main_part.js")
+    convertJs=url_for("static",filename="js/convert.js")
     loginButton=url_for("static",filename="images/loginButton.png")
     login=url_for("static",filename="images/login.jpg")
     form = request.form
@@ -28,10 +29,10 @@ def login():
     
     if not username:
         flash("please input username !")
-        return render_template("index.html",mainJs=mainJs,loginButton=loginButton,login=login)
+        return render_template("index.html",convertJs=convertJs,mainJs=mainJs,loginButton=loginButton,login=login)
     elif not password:
         flash("please input password !")
-        return render_template("index.html",mainJs=mainJs,loginButton=loginButton,login=login)
+        return render_template("index.html",convertJs=convertJs,mainJs=mainJs,loginButton=loginButton,login=login)
     else:
         sql = 'SELECT * FROM mytable'
         conn = sqlite3.connect('data/data.db')
@@ -45,12 +46,12 @@ def login():
             pw = row[2]
             if (username == un and password == pw):
                 flash(row[1])
-                return render_template("logined.html",mainJs=mainJs,loginButton=loginButton,login=login)
+                return render_template("logined.html",convertJs=convertJs,mainJs=mainJs,loginButton=loginButton,login=login)
                 cur.close()
                 conn.close()
         
         flash("user name or password is wrong !")
-        return render_template("index.html",mainJs=mainJs,loginButton=loginButton,login=login)
+        return render_template("index.html",convertJs=convertJs,mainJs=mainJs,loginButton=loginButton,login=login)
         cur.close()
         conn.close()
             
