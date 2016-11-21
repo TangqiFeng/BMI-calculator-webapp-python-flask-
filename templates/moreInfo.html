@@ -1,0 +1,775 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>show-history</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--auther: Tangqi Feng-->
+    <script type="text/javascript" src="{{mainJs}}"></script>
+
+
+    <style>
+        
+        TABLE {
+            font-family: Arial;
+            font-size: 12px;
+            color: #1C6ED1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <div id="login" style="border: 1px dashed rgb(0,0,255);background-color: #ECF5FC;">
+
+        <a href="/">EXIT !</a>
+        <P align=center style="font-size:14px; font-weight:600 ">
+            <br>Female Standard (age - height ->weight)</P>
+        <TABLE align=center cellSpacing=2 cellPadding=2 width="80%" border=1 style="border:1px solid #1C6ED1 ">
+            <TBODY>
+                <TR bgColor=#EFF7F0>
+                    <TD width=100 height="24" align=middle>age | height</TD>
+                    <TD align=middle width=50>152cm</TD>
+                    <TD align=middle width=50>156cm</TD>
+                    <TD align=middle width=50>160cm</TD>
+                    <TD align=middle width=50>162cm</TD>
+                    <TD align=middle width=50>164cm</TD>
+                    <TD align=middle width=50>166cm</TD>
+                    <TD align=middle width=50>168cm</TD>
+                    <TD align=middle width=50>170cm</TD>
+                    <TD align=middle width=50>172cm</TD>
+                    <TD align=middle width=50>176cm</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=100>19</TD>
+                    <TD align=middle width=50>46</TD>
+                    <TD align=middle width=50>47</TD>
+                    <TD align=middle width=50>49</TD>
+                    <TD align=middle width=50>50</TD>
+                    <TD align=middle width=50>51</TD>
+                    <TD align=middle width=50>52</TD>
+                    <TD align=middle width=50>54</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>60</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=100>21</TD>
+                    <TD align=middle width=50>46</TD>
+                    <TD align=middle width=50>47</TD>
+                    <TD align=middle width=50>49</TD>
+                    <TD align=middle width=50>50</TD>
+                    <TD align=middle width=50>51</TD>
+                    <TD align=middle width=50>52</TD>
+                    <TD align=middle width=50>54</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>60</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=100>23</TD>
+                    <TD align=middle width=50>46</TD>
+                    <TD align=middle width=50>47</TD>
+                    <TD align=middle width=50>49</TD>
+                    <TD align=middle width=50>50</TD>
+                    <TD align=middle width=50>51</TD>
+                    <TD align=middle width=50>52</TD>
+                    <TD align=middle width=50>54</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>60</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=100>25</TD>
+                    <TD align=middle width=50>46</TD>
+                    <TD align=middle width=50>48</TD>
+                    <TD align=middle width=50>49</TD>
+                    <TD align=middle width=50>50</TD>
+                    <TD align=middle width=50>51</TD>
+                    <TD align=middle width=50>53</TD>
+                    <TD align=middle width=50>55</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>61</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=100>27</TD>
+                    <TD align=middle width=50>47</TD>
+                    <TD align=middle width=50>48</TD>
+                    <TD align=middle width=50>50</TD>
+                    <TD align=middle width=50>51</TD>
+                    <TD align=middle width=50>52</TD>
+                    <TD align=middle width=50>53</TD>
+                    <TD align=middle width=50>55</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>61</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=100>29</TD>
+                    <TD align=middle width=50>47</TD>
+                    <TD align=middle width=50>49</TD>
+                    <TD align=middle width=50>51</TD>
+                    <TD align=middle width=50>52</TD>
+                    <TD align=middle width=50>53</TD>
+                    <TD align=middle width=50>54</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>59</TD>
+                    <TD align=middle width=50>62</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=100>31</TD>
+                    <TD align=middle width=50>48</TD>
+                    <TD align=middle width=50>49</TD>
+                    <TD align=middle width=50>51</TD>
+                    <TD align=middle width=50>52</TD>
+                    <TD align=middle width=50>53</TD>
+                    <TD align=middle width=50>54</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>59</TD>
+                    <TD align=middle width=50>62</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=100>33</TD>
+                    <TD align=middle width=50>48</TD>
+                    <TD align=middle width=50>50</TD>
+                    <TD align=middle width=50>51</TD>
+                    <TD align=middle width=50>52</TD>
+                    <TD align=middle width=50>53</TD>
+                    <TD align=middle width=50>55</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>59</TD>
+                    <TD align=middle width=50>63</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=100>35</TD>
+                    <TD align=middle width=50>49</TD>
+                    <TD align=middle width=50>50</TD>
+                    <TD align=middle width=50>52</TD>
+                    <TD align=middle width=50>52</TD>
+                    <TD align=middle width=50>53</TD>
+                    <TD align=middle width=50>55</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>59</TD>
+                    <TD align=middle width=50>60</TD>
+                    <TD align=middle width=50>63</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=100>37</TD>
+                    <TD align=middle width=50>49</TD>
+                    <TD align=middle width=50>51</TD>
+                    <TD align=middle width=50>53</TD>
+                    <TD align=middle width=50>53</TD>
+                    <TD align=middle width=50>54</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>59</TD>
+                    <TD align=middle width=50>60</TD>
+                    <TD align=middle width=50>61</TD>
+                    <TD align=middle width=50>64</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=100>39</TD>
+                    <TD align=middle width=50>50</TD>
+                    <TD align=middle width=50>52</TD>
+                    <TD align=middle width=50>53</TD>
+                    <TD align=middle width=50>53</TD>
+                    <TD align=middle width=50>55</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>59</TD>
+                    <TD align=middle width=50>60</TD>
+                    <TD align=middle width=50>61</TD>
+                    <TD align=middle width=50>65</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=100>41</TD>
+                    <TD align=middle width=50>51</TD>
+                    <TD align=middle width=50>52</TD>
+                    <TD align=middle width=50>54</TD>
+                    <TD align=middle width=50>54</TD>
+                    <TD align=middle width=50>55</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>59</TD>
+                    <TD align=middle width=50>61</TD>
+                    <TD align=middle width=50>62</TD>
+                    <TD align=middle width=50>65</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=100>43</TD>
+                    <TD align=middle width=50>51</TD>
+                    <TD align=middle width=50>53</TD>
+                    <TD align=middle width=50>55</TD>
+                    <TD align=middle width=50>55</TD>
+
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>60</TD>
+                    <TD align=middle width=50>62</TD>
+                    <TD align=middle width=50>63</TD>
+                    <TD align=middle width=50>66</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=100>45</TD>
+                    <TD align=middle width=50>52</TD>
+                    <TD align=middle width=50>53</TD>
+                    <TD align=middle width=50>55</TD>
+                    <TD align=middle width=50>55</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>60</TD>
+                    <TD align=middle width=50>62</TD>
+                    <TD align=middle width=50>63</TD>
+                    <TD align=middle width=50>66</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=100>47</TD>
+                    <TD align=middle width=50>52</TD>
+                    <TD align=middle width=50>53</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>60</TD>
+                    <TD align=middle width=50>62</TD>
+                    <TD align=middle width=50>63</TD>
+                    <TD align=middle width=50>67</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=100>49</TD>
+                    <TD align=middle width=50>52</TD>
+                    <TD align=middle width=50>53</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>59</TD>
+                    <TD align=middle width=50>60</TD>
+                    <TD align=middle width=50>62</TD>
+                    <TD align=middle width=50>63</TD>
+                    <TD align=middle width=50>67</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=100>51</TD>
+                    <TD align=middle width=50>52</TD>
+                    <TD align=middle width=50>54</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>59</TD>
+                    <TD align=middle width=50>61</TD>
+                    <TD align=middle width=50>62</TD>
+                    <TD align=middle width=50>63</TD>
+                    <TD align=middle width=50>67</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=100>53</TD>
+                    <TD align=middle width=50>53</TD>
+                    <TD align=middle width=50>54</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>59</TD>
+                    <TD align=middle width=50>61</TD>
+                    <TD align=middle width=50>62</TD>
+                    <TD align=middle width=50>64</TD>
+                    <TD align=middle width=50>67</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=100>55</TD>
+                    <TD align=middle width=50>53</TD>
+                    <TD align=middle width=50>54</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>60</TD>
+                    <TD align=middle width=50>61</TD>
+                    <TD align=middle width=50>63</TD>
+                    <TD align=middle width=50>64</TD>
+                    <TD align=middle width=50>67</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=100>57</TD>
+                    <TD align=middle width=50>53</TD>
+                    <TD align=middle width=50>55</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>60</TD>
+                    <TD align=middle width=50>61</TD>
+                    <TD align=middle width=50>63</TD>
+                    <TD align=middle width=50>64</TD>
+                    <TD align=middle width=50>68</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=100>59</TD>
+                    <TD align=middle width=50>53</TD>
+                    <TD align=middle width=50>55</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>60</TD>
+                    <TD align=middle width=50>61</TD>
+                    <TD align=middle width=50>63</TD>
+                    <TD align=middle width=50>64</TD>
+                    <TD align=middle width=50>68</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=100>61</TD>
+                    <TD align=middle width=50>53</TD>
+                    <TD align=middle width=50>54</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>59</TD>
+                    <TD align=middle width=50>61</TD>
+                    <TD align=middle width=50>63</TD>
+                    <TD align=middle width=50>64</TD>
+                    <TD align=middle width=50>67</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=100>63</TD>
+                    <TD align=middle width=50>52</TD>
+                    <TD align=middle width=50>54</TD>
+                    <TD align=middle width=50>55</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>59</TD>
+                    <TD align=middle width=50>61</TD>
+                    <TD align=middle width=50>62</TD>
+                    <TD align=middle width=50>63</TD>
+                    <TD align=middle width=50>67</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=100>65</TD>
+                    <TD align=middle width=50>52</TD>
+                    <TD align=middle width=50>54</TD>
+                    <TD align=middle width=50>55</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>59</TD>
+                    <TD align=middle width=50>61</TD>
+                    <TD align=middle width=50>62</TD>
+                    <TD align=middle width=50>63</TD>
+                    <TD align=middle width=50>66</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=100>67</TD>
+                    <TD align=middle width=50>52</TD>
+                    <TD align=middle width=50>54</TD>
+                    <TD align=middle width=50>55</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>59</TD>
+                    <TD align=middle width=50>61</TD>
+                    <TD align=middle width=50>62</TD>
+                    <TD align=middle width=50>63</TD>
+                    <TD align=middle width=50>66</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=100>69</TD>
+                    <TD align=middle width=50>52</TD>
+                    <TD align=middle width=50>54</TD>
+                    <TD align=middle width=50>55</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>59</TD>
+                    <TD align=middle width=50>61</TD>
+                    <TD align=middle width=50>62</TD>
+                    <TD align=middle width=50>63</TD>
+                    <TD align=middle width=50>66</TD>
+                </TR>
+            </TBODY>
+        </TABLE>
+        <P align=center style="font-size:14px; font-weight:600 ">
+            <br>Male Standard (age - height ->weight)</P>
+        <TABLE align=center cellSpacing=2 cellPadding=2 width="80%" border=1 style="border:1px solid #1C6ED1 ">
+            <TBODY>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=95 height=30>age | height</TD>
+                    <TD align=middle width=50 height=30>152cm</TD>
+                    <TD align=middle width=50 height=30>156cm</TD>
+                    <TD align=middle width=50 height=30>160cm</TD>
+                    <TD align=middle width=50 height=30>164cm</TD>
+                    <TD align=middle width=50 height=30>168cm</TD>
+                    <TD align=middle width=50 height=30>172cm</TD>
+                    <TD align=middle width=50 height=30>176cm</TD>
+                    <TD align=middle width=50 height=30>180cm</TD>
+                    <TD align=middle width=50 height=30>184cm</TD>
+                    <TD align=middle width=50 height=30>188cm</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=95>19</TD>
+                    <TD align=middle width=50>50</TD>
+                    <TD align=middle width=50>52</TD>
+                    <TD align=middle width=50>52</TD>
+                    <TD align=middle width=50>54</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>61</TD>
+                    <TD align=middle width=50>64</TD>
+                    <TD align=middle width=50>67</TD>
+                    <TD align=middle width=50>70</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=95>21</TD>
+                    <TD align=middle width=50>51</TD>
+                    <TD align=middle width=50>53</TD>
+                    <TD align=middle width=50>54</TD>
+                    <TD align=middle width=50>55</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>60</TD>
+                    <TD align=middle width=50>62</TD>
+                    <TD align=middle width=50>65</TD>
+                    <TD align=middle width=50>69</TD>
+                    <TD align=middle width=50>72</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=95>23</TD>
+                    <TD align=middle width=50>52</TD>
+                    <TD align=middle width=50>53</TD>
+                    <TD align=middle width=50>55</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>60</TD>
+                    <TD align=middle width=50>63</TD>
+                    <TD align=middle width=50>66</TD>
+                    <TD align=middle width=50>70</TD>
+                    <TD align=middle width=50>73</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=95>25</TD>
+                    <TD align=middle width=50>52</TD>
+                    <TD align=middle width=50>54</TD>
+                    <TD align=middle width=50>55</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>59</TD>
+                    <TD align=middle width=50>61</TD>
+                    <TD align=middle width=50>63</TD>
+                    <TD align=middle width=50>67</TD>
+                    <TD align=middle width=50>71</TD>
+                    <TD align=middle width=50>74</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=95>27</TD>
+                    <TD align=middle width=50>52</TD>
+                    <TD align=middle width=50>54</TD>
+                    <TD align=middle width=50>55</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>59</TD>
+                    <TD align=middle width=50>61</TD>
+                    <TD align=middle width=50>64</TD>
+                    <TD align=middle width=50>67</TD>
+                    <TD align=middle width=50>71</TD>
+                    <TD align=middle width=50>74</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=95>29</TD>
+                    <TD align=middle width=50>53</TD>
+                    <TD align=middle width=50>55</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>59</TD>
+                    <TD align=middle width=50>61</TD>
+                    <TD align=middle width=50>64</TD>
+                    <TD align=middle width=50>67</TD>
+                    <TD align=middle width=50>71</TD>
+                    <TD align=middle width=50>74</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=95>31</TD>
+                    <TD align=middle width=50>53</TD>
+                    <TD align=middle width=50>55</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>60</TD>
+                    <TD align=middle width=50>62</TD>
+                    <TD align=middle width=50>65</TD>
+                    <TD align=middle width=50>68</TD>
+                    <TD align=middle width=50>72</TD>
+                    <TD align=middle width=50>75</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=95>33</TD>
+                    <TD align=middle width=50>54</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>60</TD>
+                    <TD align=middle width=50>63</TD>
+                    <TD align=middle width=50>65</TD>
+                    <TD align=middle width=50>68</TD>
+                    <TD align=middle width=50>72</TD>
+                    <TD align=middle width=50>75</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=95>35</TD>
+                    <TD align=middle width=50>54</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>59</TD>
+                    <TD align=middle width=50>61</TD>
+                    <TD align=middle width=50>63</TD>
+                    <TD align=middle width=50>66</TD>
+                    <TD align=middle width=50>69</TD>
+                    <TD align=middle width=50>73</TD>
+                    <TD align=middle width=50>76</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=95>37</TD>
+                    <TD align=middle width=50>55</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>59</TD>
+                    <TD align=middle width=50>61</TD>
+                    <TD align=middle width=50>63</TD>
+                    <TD align=middle width=50>66</TD>
+                    <TD align=middle width=50>69</TD>
+                    <TD align=middle width=50>73</TD>
+                    <TD align=middle width=50>76</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=95>39</TD>
+                    <TD align=middle width=50>55</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>60</TD>
+                    <TD align=middle width=50>61</TD>
+                    <TD align=middle width=50>64</TD>
+                    <TD align=middle width=50>66</TD>
+                    <TD align=middle width=50>70</TD>
+                    <TD align=middle width=50>74</TD>
+                    <TD align=middle width=50>77</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=95>41</TD>
+                    <TD align=middle width=50>55</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>60</TD>
+                    <TD align=middle width=50>62</TD>
+                    <TD align=middle width=50>64</TD>
+                    <TD align=middle width=50>67</TD>
+                    <TD align=middle width=50>70</TD>
+                    <TD align=middle width=50>74</TD>
+                    <TD align=middle width=50>77</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=95>43</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>60</TD>
+                    <TD align=middle width=50>62</TD>
+                    <TD align=middle width=50>64</TD>
+                    <TD align=middle width=50>67</TD>
+                    <TD align=middle width=50>70</TD>
+                    <TD align=middle width=50>74</TD>
+                    <TD align=middle width=50>77</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=95>45</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>59</TD>
+                    <TD align=middle width=50>60</TD>
+                    <TD align=middle width=50>62</TD>
+                    <TD align=middle width=50>64</TD>
+                    <TD align=middle width=50>67</TD>
+                    <TD align=middle width=50>70</TD>
+                    <TD align=middle width=50>74</TD>
+                    <TD align=middle width=50>77</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=95>47</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>59</TD>
+                    <TD align=middle width=50>61</TD>
+                    <TD align=middle width=50>63</TD>
+                    <TD align=middle width=50>65</TD>
+                    <TD align=middle width=50>67</TD>
+                    <TD align=middle width=50>71</TD>
+                    <TD align=middle width=50>75</TD>
+                    <TD align=middle width=50>78</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=95>49</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>59</TD>
+                    <TD align=middle width=50>61</TD>
+                    <TD align=middle width=50>63</TD>
+                    <TD align=middle width=50>65</TD>
+                    <TD align=middle width=50>68</TD>
+                    <TD align=middle width=50>71</TD>
+                    <TD align=middle width=50>75</TD>
+                    <TD align=middle width=50>78</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=95>51</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>59</TD>
+                    <TD align=middle width=50>61</TD>
+                    <TD align=middle width=50>63</TD>
+                    <TD align=middle width=50>65</TD>
+                    <TD align=middle width=50>68</TD>
+                    <TD align=middle width=50>71</TD>
+                    <TD align=middle width=50>75</TD>
+                    <TD align=middle width=50>78</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=95>53</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>59</TD>
+                    <TD align=middle width=50>61</TD>
+                    <TD align=middle width=50>63</TD>
+                    <TD align=middle width=50>65</TD>
+                    <TD align=middle width=50>68</TD>
+                    <TD align=middle width=50>71</TD>
+                    <TD align=middle width=50>75</TD>
+                    <TD align=middle width=50>78</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=95>55</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>59</TD>
+                    <TD align=middle width=50>61</TD>
+                    <TD align=middle width=50>63</TD>
+                    <TD align=middle width=50>65</TD>
+                    <TD align=middle width=50>68</TD>
+                    <TD align=middle width=50>71</TD>
+                    <TD align=middle width=50>75</TD>
+                    <TD align=middle width=50>78</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=95>57</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>59</TD>
+                    <TD align=middle width=50>60</TD>
+                    <TD align=middle width=50>62</TD>
+                    <TD align=middle width=50>65</TD>
+                    <TD align=middle width=50>67</TD>
+                    <TD align=middle width=50>70</TD>
+                    <TD align=middle width=50>74</TD>
+                    <TD align=middle width=50>77</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=95>59</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>60</TD>
+                    <TD align=middle width=50>62</TD>
+                    <TD align=middle width=50>64</TD>
+                    <TD align=middle width=50>67</TD>
+                    <TD align=middle width=50>70</TD>
+                    <TD align=middle width=50>74</TD>
+                    <TD align=middle width=50>77</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=95>61</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>60</TD>
+                    <TD align=middle width=50>62</TD>
+                    <TD align=middle width=50>64</TD>
+                    <TD align=middle width=50>67</TD>
+                    <TD align=middle width=50>70</TD>
+                    <TD align=middle width=50>74</TD>
+                    <TD align=middle width=50>77</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=95>63</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>60</TD>
+                    <TD align=middle width=50>62</TD>
+                    <TD align=middle width=50>64</TD>
+                    <TD align=middle width=50>67</TD>
+                    <TD align=middle width=50>70</TD>
+                    <TD align=middle width=50>74</TD>
+                    <TD align=middle width=50>77</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=95>65</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>60</TD>
+                    <TD align=middle width=50>62</TD>
+                    <TD align=middle width=50>64</TD>
+                    <TD align=middle width=50>67</TD>
+                    <TD align=middle width=50>70</TD>
+                    <TD align=middle width=50>74</TD>
+                    <TD align=middle width=50>77</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=95>67</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>60</TD>
+                    <TD align=middle width=50>62</TD>
+                    <TD align=middle width=50>64</TD>
+                    <TD align=middle width=50>67</TD>
+                    <TD align=middle width=50>70</TD>
+                    <TD align=middle width=50>74</TD>
+                    <TD align=middle width=50>77</TD>
+                </TR>
+                <TR bgColor=#EFF7F0>
+                    <TD align=middle width=95>69</TD>
+                    <TD align=middle width=50>56</TD>
+                    <TD align=middle width=50>57</TD>
+                    <TD align=middle width=50>58</TD>
+                    <TD align=middle width=50>60</TD>
+                    <TD align=middle width=50>62</TD>
+                    <TD align=middle width=50>64</TD>
+                    <TD align=middle width=50>67</TD>
+                    <TD align=middle width=50>70</TD>
+                    <TD align=middle width=50>74</TD>
+                    <TD align=middle width=50>77</TD>
+                </TR>
+            </TBODY>
+        </TABLE>
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
