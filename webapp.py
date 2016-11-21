@@ -86,12 +86,9 @@ def register():
         flash("success !")
         return render_template("register.html",registerButton=registerButton,register=register)
     
-@app.route('/history', methods=['POST'])
-def showHistory():
-    form = request.form
-    BMI = form.get('bmi')
-    
-    return BMI
+@app.route('/moreInfo')
+def init():
+    return render_template("moreInfo.html");
 
 if __name__ == '__main__':
     app.run()
