@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--         this page auther: Tangqi Feng  -->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,26 +26,10 @@
     <script type="text/javascript" src="{{mainJs}}"></script>
 
 
-    <style>
-        
-        .text1 {
-            margin: 6px 0 6px 0;
-            color: #1C6ED1;
-        }
-        
-        .text2 {
-            margin: 6px 0 6px 0;
-            color: #FF8040;
-        }
-        
-        .text3 {
-            margin: 6px 0 6px 0;
-            color: #FF0000;
-        }
-    </style>
+    <link rel="stylesheet" href="{{registerCss}}" type="text/css" />
 </head>
 
-<body>
+<body background="{{registerBkg}}" style="backgrond-size:cover">
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -51,7 +37,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <div class="col-md-4 column" id="login" style="border: 1px dashed rgb(0,0,255);background-color: #ECF5FC;">
+    <div class="col-md-4 column" id="login" style="margin-left:40%;margin-top:12%;">
                 <img width="100" height="100" src="{{register}}" />
                 <form action="/register" method="post">
                     <p class="text1">user name：</p>
