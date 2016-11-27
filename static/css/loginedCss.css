@@ -1,0 +1,59 @@
+/* 
+    author: Tangqi Feng
+
+    this file is the css style for html page:
+
+        logined.html
+
+*/
+
+h1,
+h4 {
+    text-align: center;
+}
+
+.button {
+    border-top: 1px solid #96d1f8;
+    background: #65a9d7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+    background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+    background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+    background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+    background: -o-linear-gradient(top, #3e779d, #65a9d7);
+    padding: 5px 10px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+    color: white;
+    font-size: 14px;
+    font-family: Georgia, serif;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.tableForm1 {
+    padding-left: 210px;
+    padding-bottom: 10px;
+}
+
+.text1 {
+    margin: 6px 0 6px 0;
+    color: #1C6ED1;
+}
+
+.text2 {
+    margin: 6px 0 6px 0;
+    color: #FF8040;
+}
+
+.text3 {
+    margin: 6px 0 6px 0;
+    color: #FF0000;
+}
+
+
+
