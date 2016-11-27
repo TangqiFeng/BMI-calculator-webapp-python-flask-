@@ -20,63 +20,12 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!--auther: Tangqi Feng-->
     <script type="text/javascript" src="{{mainJs}}"></script>
     <script type="text/javascript" src="{{convertJs}}"></script>
-
-
-    <style>
-        h1,
-        h4 {
-            text-align: center;
-        }
-        
-        .button {
-            border-top: 1px solid #96d1f8;
-            background: #65a9d7;
-            background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
-            background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
-            background: -moz-linear-gradient(top, #3e779d, #65a9d7);
-            background: -ms-linear-gradient(top, #3e779d, #65a9d7);
-            background: -o-linear-gradient(top, #3e779d, #65a9d7);
-            padding: 5px 10px;
-            -webkit-border-radius: 8px;
-            -moz-border-radius: 8px;
-            border-radius: 8px;
-            -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-            -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-            box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-            text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
-            color: white;
-            font-size: 14px;
-            font-family: Georgia, serif;
-            text-decoration: none;
-            vertical-align: middle;
-        }
-        
-        .tableForm1 {
-            padding-left: 210px;
-            padding-bottom: 10px;
-        }
-        
-        .text1 {
-            margin: 6px 0 6px 0;
-            color: #1C6ED1;
-        }
-        
-        .text2 {
-            margin: 6px 0 6px 0;
-            color: #FF8040;
-        }
-        
-        .text3 {
-            margin: 6px 0 6px 0;
-            color: #FF0000;
-        }
-    </style>
+    <link rel="stylesheet" href="{{loginedCss}}" type="text/css" />
 </head>
 
-<body>
+<body  background={{bg}}>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -84,25 +33,30 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <!-- the usage of bootstrap all come from:
+    <!-- the usage of bootstrap class:row clearfix,col-md-8 column
+         is get references of:
          http://www.runoob.com/try/bootstrap/layoutit/#
          or https://v4-alpha.getbootstrap.com/components/forms/-->
 
+    <!--the page container-->
     <div class="container" style="border: 1px dashed rgb(0,255,0)">
 
-        <!--title part-->
-        <div class="title" style="border: 1px dashed rgb(255,0,0)">
-            <h1>BMI calculator</h1>
-            <h4>(ideal weight calculater)</h4>
+        <!--title part               author:Tangqi Feng-->
+        <div class="row clearfix" style="background-image:url({{titleBg}})">
+            <div align=center>
+                <img src="{{titlePic}}" />
+            </div>
+            <h4><span style="color: white;">(ideal weight calculator)</span></h4>
         </div>
 
-        <!--introduction & log in parts-->
+        <!--introduction & log in parts -->
         <div class="row clearfix" id="introduction">
+           
             <!--introduction part                    author: Zehua Yu-->
-            <div class="col-md-8 column" style="border: 1px dashed rgb(0,0,255)">
+            <div class="col-md-8 column" >
                 <p height=100 align="left" style="font-size:18px; font-weight:600; ">BMI Equation: BMI = Weight（Kilograms） / Height^2(Meters)</p>
-                <div id="popDiv" style="height:auto!important;height:20px;border:1px ;">what is BMI : if you want to know more click
-                    <label id="method" type="button" style="width:100px;" onclick="var sta = document.getElementById('popTitle');
+                <div style="height:auto!important;height:20px;border:1px ;font-size:16px;">what is BMI : if you want to know more click
+                    <label id="method" type="button" style="color:orange; width:100px;" onclick="var sta = document.getElementById('popTitle');
                           var mod = document.getElementById('method');
                           if(sta.style.display == 'none')
                           {
@@ -119,7 +73,7 @@
                     </label>
 
                     <div id="popTitle" visibility="hidden" style="display:none;">
-                        <pre style="word-break:break-all;width:500px;height:100px;">
+                        <pre style="word-break:break-all;width:500px;height:100px;color:orange;">
 Body mass index (BMI) is a measure of body fat based on your
 weight in relation to your height, and applies to most adult
  men and women aged 20 and over. For children aged 2and over
@@ -127,9 +81,12 @@ weight in relation to your height, and applies to most adult
                             </pre>
                     </div>
                 </div>
+                <p style="color:grey;">(if you want to know more, you need to login!)</p>
             </div>
+            
+            
             <!-- log in part                  author: Tangqi Feng -->
-            <div class="col-md-4 column" id="login" style="border: 1px dashed rgb(0,0,255);background-color: #ECF5FC;">
+            <div class="col-md-4 column" id="login">
                 <img width="150" height="55" src="{{login}}" />
 
                 <h3 class="text1">hello : {{get_flashed_messages()[0]}} </h3>
@@ -148,17 +105,17 @@ weight in relation to your height, and applies to most adult
         <div class="row clearfix" id="main&calculator">
 
             <!-- main                             author: Tangqi Feng   -->
-            <div class="col-md-8 column" id="main" style="border: 1px dashed rgb(0,0,255)">
-                <table class="col-md-12 column" align:center borderColorDark=#f5fafa borderColorLight=#8AB78A>
+            <div class="col-md-8 column" id="main" style="background-image:url({{modelBg}})">
+                <table class="col-md-12 column" align:center>
                     <tr>
-                        <td align=center bgColor=#f9fbf9 style="height:30px; font-size:18px; color:green; ">
+                        <td align=center style="height:30px; font-size:18px; color:green; ">
                             <br>adult height-weight calculate
                             <hr/>
                         </td>
                     </tr>
                     <tr>
                         <form name="form1">
-                            <td bgColor=#f9fbf9 class="tableForm1">
+                            <td class="tableForm1">
                                 your height：
                                 <br>
                                 <input size=16 name=height style="width: 240px; height: 30px;">&nbsp;(cm)
@@ -182,12 +139,15 @@ weight in relation to your height, and applies to most adult
                 </table>
             </div>
 
-            <!-- inches to cm convert caculator   author:Qi Fu-->
-            <div class="col-md-4 column" id="calculator" style="border: 1px dashed rgb(0,0,255); margin-top:5%;">
+            <!-- inches to cm convert caculator     author:Qi Fu-->
+            <div class="col-md-4 column" id="calculator" style="background-image:url({{modelBg}});">
                 <table>
                     <tr>
+                      <br />
+                      <br />
+                       <b style="font-size:20px;margin-left:35%; margin-top:5%; color:blueviolet;">converter</b><br />
                         <b>Hight :&nbsp;</b>
-                        <input type="text" size="1" maxlength="3" id="height_feet" style="margin-left:0px;margin-top:30px;">feet
+                        <input type="text" size="1" maxlength="3" id="height_feet" style="margin-left:0px;margin-top:28px;">feet
                         <input type="text" size="1" maxlength="3" id="height_inches" style="margin-left:0px;">inches
                         <b>=</b>
                         <input type="text" size="3" maxlength="4" id="centimeter" style="margin-left:0px;">cm
@@ -195,6 +155,9 @@ weight in relation to your height, and applies to most adult
                     <br>
                     <button type="button" style="margin-left:0px;width:60px;height:20px; " onclick="one()">Convert</button>
                     <button type="button" style="margin-left:50px;margin-top:20px;width:60px;height:20px;" onclick="clear1()">Reset</button>
+                    <br />
+                    <br />
+                    <br />
 
                 </table>
                 <table>
@@ -212,29 +175,29 @@ weight in relation to your height, and applies to most adult
             </div>
         </div>
 
-        <!--result display          author: Tangqi Feng -->
-        <div class="row clearfix" id="result" style="border: 1px dashed rgb(0,0,255)">
-            <table class="col-md-12 column" height="200px" borderColorDark=#f5fafa borderColorLight=#8AB78A>
+        <!--result display               author: Tangqi Feng -->
+        <div class="row clearfix" id="result" style="background-image:url({{modelBg}});">
+            <table class="col-md-12 column" height="200px">
                 <form name="form2">
                     <tr>
-                        <td align=center bgColor=#f9fbf9 colspan="2" style="font-size:18px; color:green; ">result
+                        <td align=center colspan="2" style="font-size:18px; color:green; ">result
                             <hr/>
                         </td>
                     </tr>
                     <tr>
-                        <td class="text1" bgColor=#f9fbf9 style="padding-left: 30%;">
+                        <td class="text1" style="padding-left: 30%;">
                             <span class="text2">your ideal weight：</span>
                             <input onfocus=blur() size=4 name="legendweight" style="border:0; background:none;">&nbsp;
                             <span class="text2">kg</span>
                         </td>
-                        <td class="text1" bgColor=#f9fbf9 style="padding-right: 180px;">
+                        <td class="text1" style="padding-right: 180px;">
                             <span class="text2">your BMI：</span>
                             <input onfocus=blur() size=3 name="bmi" style="border:0; background:none;">&nbsp;&nbsp;&nbsp;
                             <span class="text2">(21-22 is the best)</span>
                         </td>
                     </tr>
                     <tr>
-                        <td class="text1" align=center bgColor=#f9fbf9 colspan="2">
+                        <td class="text1" align=center colspan="2">
                             <span class="text2">your current state：</span>
                             <textarea onfocus=blur() name=nowstat cols=40 style="border:0; background:none;"></textarea>
                         </td>
@@ -246,7 +209,14 @@ weight in relation to your height, and applies to most adult
 
         <!--extension info-->
         <div class="row clearfix" id="exInfo" style="border: 1px dashed rgb(0,0,255)">
-            <p>extension infomation</p>
+        
+
+            
+                <img id="exPic" src="{{ex3}}"  width=1160 height=400  />
+
+            
+
+
         </div>
 
 
