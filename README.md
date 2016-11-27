@@ -24,7 +24,7 @@ works:
 - Zehua Yu: introduction part(what is BMI); extension part(pictures animation); lay-out of moreInfo.html.
 - Weichen Wang: lay-out of index.html and logined.html.
 - Qi Fu: convert part(inches to cm/punds to kg); lay-out of register.html.
-- Tangqi Feng: the whole frame; BMI caculator; login part(include database); connect to flask; separate different files.
+- Tangqi Feng: the whole frame; BMI caculator; login and register part(include database); connect to flask; separate different files.
 
 ### Meetings
 Team meetings were held every Tuesday at 2pm in the library at GMIT's Dublin Road campus for the duration of the project.
