@@ -6,11 +6,11 @@ The module is taught to undergraduate students at [GMIT](http://www.gmit.ie) in 
 The lecturer is [Ian McLoughlin](https://ianmcloughlin.github.io).
 
 ### Project Overview
-We have created a Single-Page Web Application (SPA) that lets users to calculate their BMI value, to know their ideal weight.
-This application was selected after we saw the website [bmi-calculator](http://www.bmi-calculator.net/). we are very interested in the idea. thus, we chose to create a our own version. Also, we have login model for more infomation and function.
+We have created a Simple Web Application that lets users to calculate their BMI value, to know their ideal weight. And provide login function for users to get more function and infomations.
 
-The project was guided by the following excerpt from the project instructions:
->You are required to develop a single-page web application(SPA) written in the programming language Python using the Flask framework. You must devise an idea for a web application, write the software, write documentation explaining how the application works, and write a short user guide for it.
+This application was selected after we saw the website [bmi-calculator](http://www.bmi-calculator.net/). we are very interested in the idea. thus, we chose to create a our own version. 
+
+This Web Application includes 4 pages, switched by the routes of [Flask](http://flask.pocoo.org/) server. searching/adding data to database(SQLite) is also completed by the server.
 
 ### Team Members
 We selected to complete this project as a team.
@@ -36,7 +36,7 @@ At each meeting, Tangqi Feng took notes using their laptop and assigned the task
 The application is written using the [Flask](http://flask.pocoo.org/) library in [Python 3](https://www.python.org).
 Both must be installed to run the project.
 
-We use the [sqlite3](https://docs.python.org/2/library/sqlite3.html) package for persistence in the application.
+We use the [sqlite3](https://docs.python.org/2/library/sqlite3.html) package for login/register part in the application.
 Besides, [Flask Script](https://flask-script.readthedocs.io/en/latest/) is needed. 
 This must also be installed.
 However, no further configuration our setup is required, as the database is fully contained in the db directory in this repository.
