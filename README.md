@@ -39,6 +39,66 @@ Both must be installed to run the project.
 We use the [sqlite3](https://docs.python.org/2/library/sqlite3.html) package for login/register part in the application.
 Besides, [Flask Script](https://flask-script.readthedocs.io/en/latest/) is needed. 
 This must also be installed.
+
+Install Flask:
+
+If you are on Mac OS X or Linux, chances are that one of the following two commands will work for you:
+```bash
+$ sudo easy_install virtualenv
+```
+or even better:
+```bash
+$ sudo pip install virtualenv
+```
+One of these will probably install virtualenv on your system. Maybe it’s even in your package manager. If you use Ubuntu, try:
+```bash
+$ sudo apt-get install python-virtualenv
+```
+
+If you are on Windows and don’t have the easy_install command, you must install it first. Check the pip and setuptools on Windows section for more information about how to do that. Once you have it installed, run the same commands as above, but without the sudo prefix.
+
+Once you have virtualenv installed, just fire up a shell and create your own environment. I usually create a project folder and a venv folder within:
+```bash
+$ mkdir myproject
+$ cd myproject
+$ virtualenv venv
+New python executable in venv/bin/python
+Installing setuptools, pip............done.
+```
+Now, whenever you want to work on a project, you only have to activate the corresponding environment. On OS X and Linux, do the following:
+```bash
+$ . venv/bin/activate
+```
+If you are a Windows user, the following command is for you:
+```bash
+$ venv\scripts\activate
+```
+Either way, you should now be using your virtualenv (notice how the prompt of your shell has changed to show the active environment).
+
+And if you want to go back to the real world, use the following command:
+```bash
+$ deactivate
+```
+After doing this, the prompt of your shell should be as familiar as before.
+
+Now, let’s move on. Enter the following command to get Flask activated in your virtualenv:
+```bash
+$ pip install Flask
+```
+A few seconds later and you are good to go.
+
+System-Wide Installation
+This is possible as well, though I do not recommend it. Just run pip with root privileges:
+```bash
+$ sudo pip install Flask
+```
+(On Windows systems, run it in a command-prompt window with administrator privileges, and leave out sudo.)
+
+Install [Flask-Script](https://flask-script.readthedocs.io/en/latest/) with pip:
+```bash
+$ pip install Flask-Script
+```
+
 However, no further configuration our setup is required, as the database is fully contained in the db directory in this repository.
 
 Once these prerequisites are installed, the application can be run locally:
