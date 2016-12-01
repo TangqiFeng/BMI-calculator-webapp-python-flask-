@@ -6,11 +6,24 @@ The module is taught to undergraduate students at [GMIT](http://www.gmit.ie) in 
 The lecturer is [Ian McLoughlin](https://ianmcloughlin.github.io).
 
 ### Project Overview
-We have created a Simple Web Application that lets users to calculate their BMI value, to know their ideal weight. And provide login function for users to get more function and infomations.
+We have created a Simple Web Application that lets users to calculate their BMI value, to know their ideal weight. And provide login function for users to get more function(inched/cm & pound/kg convert) and infomation(age-height->weight chart) if they want.
 
 This application was selected after we saw the website [bmi-calculator](http://www.bmi-calculator.net/). we are very interested in the idea. thus, we chose to create a our own version. 
 
 This Web Application includes 4 pages, switched by the routes of [Flask](http://flask.pocoo.org/) server. searching/adding data to database(SQLite) is also completed by the server.
+
+In the project, some packages of flask are used:
+- render_template: return related html file
+- url_for: get the url of pictures, css file, js file etc.
+- flash: returen error messages if something wrong
+- request: get data from forms of pages
+
+4 pages relations:
+- index.html-----log in---->logined.html  OR  --------register----->redister.html
+- logined.html------log out---->index.html  OR  --------get more info--->moreInfo.html
+- register.html-----back---->index.html
+- moreInfo.html-----back---->index.html
+
 
 ### Team Members
 We selected to complete this project as a team.
