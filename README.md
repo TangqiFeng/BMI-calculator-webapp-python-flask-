@@ -24,27 +24,6 @@ In the project, some packages of flask are used:
 - register.html-----back---->index.html
 - moreInfo.html-----back---->index.html
 
-
-### Team Members
-We selected to complete this project as a team.
-The team members are:
-- Zehua Yu
-- Tangqi Feng
-- Weichen Wang
-- Qi Fu
-
-works:
-- Zehua Yu: introduction part(what is BMI); extension part(pictures animation); lay-out of moreInfo.html.
-- Weichen Wang: lay-out of index.html and logined.html.
-- Qi Fu: convert part(inches to cm/punds to kg); lay-out of register.html.
-- Tangqi Feng: the whole frame; BMI caculator; login and register part(include database); connect to flask; separate different files.
-
-### Meetings
-Team meetings were held every Tuesday at 2pm in the library at GMIT's Dublin Road campus for the duration of the project.
-At these meetings, the management of the project was discussed, among other topics.
-The project was divided into separate tasks, and each task was assigned to team members - usually on an individual basis.
-At each meeting, Tangqi Feng took notes using their laptop and assigned the tasks using GitHub Issues.
-
 ### How to run the application
 The application is written using the [Flask](http://flask.pocoo.org/) library in [Python 3](https://www.python.org).
 Both must be installed to run the project.
